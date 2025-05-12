@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="header">
+        <div class="container"> 
+            <nav>
+               <!---<img src="img/l1.png" class="logo"> -->
+                <ul>
+                    <li> <a href="#header"> Home </a></li>
+                    <li> <a href="#about"> About </a></li>
+                    <li> <a href="#portfolio"> Portfolio </a></li>
+                    <li> <a href="#contact"> Contact </a></li>
+                    <!--bar-->
+                </ul>
+            </nav>
+            <div class="header-text">
+                <h1>Hi, I'm <span>Dhruvi Vadalia</span> from Gujarat</h1>
+                <span class="auto-type"></span> <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+            </div>
+        </div>
+    </div>
+<!-----------------------About-------------------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="img.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    
+                    <p class="ab">Web Developer and Aspiring Data Analyst with a strong foundation in HTML, CSS, React.js, Excel, SQL, and Python. Passionate about building responsive web applications and analyzing data to derive meaningful insights. Quick learner with a problem-solving mindset, eager to grow in both web development and data analytics fields. Seeking opportunities to apply technical skills, creativity, and analytical thinking in a dynamic environment.</p>
+
+                    <div class="tab-links">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li class="main"><span>Front-End</span><br>HTML, CSS, JavaScript, React.js,  UI/UX principles.</li>
+                           <!-- <li class="main"><span>Back-End</span><br>Node.js & Express.js, REST APIs, Django.</li> -->
+                            <li class="main"><span>Data Analyst Skills</span><br>SQL, Python, Excel, Power BI, Statistics.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li class="main"><span>Web Developer</span><br>Web Development</li>
+                            <li class="main"><span>UI/UX Desiger</span><br>Designing Web/App Interfaces</li>
+                            <li class="main"><span>Certificate Course</span>
+                                <a  class="main"><p>Data Analyst Course by IBM (ongoing)</p></a></li>
+                                <a  class="main"><p>Python Course by Udemy (ongoing)</p></a></li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li class="main"><span>2021: Sal Institute of Technology andEngineering Research</span><br>B.E. in ICT</li>
+                            <li class="main"><span>2020: Maharaja Agrasen Vidhyalaya</span><br>Higher Secondary Education - CBSE</li>
+                            <li class="main"><span>2018: Nirman High School</span><br>Secondary Education - CBSE</li>
+                        </ul>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+<!-----------------------Porfolio-------------------------->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+
+        <div class="work-list">
+            
+            <div class="work">
+                <img src="clock.png">
+                <div class="layer">
+                    <h3>Analog Clock</h3>
+                    <p>A functioning Analog Clock using HTML, CSS and JavaScript</p>
+                    <!---
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    -->
+                    <a href="http://127.0.0.1:5500/project_clock/indexclock.html"><img src="icon.png"></a>
+                </div>
+            </div>
+            <div class="work">
+            <img src="cal.png">
+                <div class="layer">
+                    <h3>Calculator</h3>
+                    <p>A functioning Calculator using HTML, CSS and JavaScript</p>
+                    <!---
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    -->
+                    <a href="http://127.0.0.1:5500/project_cal/indexcal.html"><img src="icon.png"></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="clock.png">
+                <div class="layer">
+                    <h3>Analog Clock</h3>
+                    <p>A functioning Analog Clock using HTML, CSS and JavaScript</p>
+                    <!---
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    -->
+                    <a href="http://127.0.0.1:5500/project_clock/indexclock.html"><img src="icon.png"></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="cal.png">
+                    <div class="layer">
+                        <h3>Calculator</h3>
+                        <p>A functioning Calculator using HTML, CSS and JavaScript</p>
+                        <!---
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                        -->
+                        <a href="http://127.0.0.1:5500/project_cal/indexcal.html"><img src="icon.png"></a>
+                    </div>
+            </div>
+          <!--  <div class="work">
+                <img src="img/cal.png">
+                    <div class="layer">
+                        <h3>Calculator</h3>
+                        <p>A functioning Calculator using HTML, CSS and JavaScript</p>
+                        <a href="http://127.0.0.1:5500/project_cal/indexcal.html"><img src="img/icon.png"></a>
+                    </div>
+            </div>
+            <div class="work">
+                <img src="img/cal.png">
+                    <div class="layer">
+                        <h3>Calculator</h3>
+                        <p>A functioning Calculator using HTML, CSS and JavaScript</p>
+                        <a href="http://127.0.0.1:5500/project_cal/indexcal.html"><img src="img/icon.png"></a>
+                    </div>
+            </div>
+            <div class="work">
+                <img src="img/cal.png">
+                    <div class="layer">
+                        <h3>Calculator</h3>
+                        <p>A functioning Calculator using HTML, CSS and JavaScript</p>
+                        <a href="http://127.0.0.1:5500/project_cal/indexcal.html"><img src="img/icon.png"></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="img/clock.png">
+                    <div class="layer">
+                        <h3>Analog Clock</h3>
+                        <p>A functioning Analog Clock using HTML, CSS and JavaScript</p>
+                        <a href="http://127.0.0.1:5500/project_clock/indexclock.html"><img src="img/icon.png"></a>
+                    </div>
+                </div>
+            -->
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+<!----------------------------Contact--------------------------------------------------------------------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+                <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <!--icon--><a href="mailto:dvadalia10@gmail.com" class="mail">
+                            <p>mail</p>
+                           </a>
+                <!--icon--><a href="https://wa.me/918141723837" class="mail">
+                            <p>whatsapp</p>
+                           </a>
+                <!--
+                <div class="social-icons">
+                    <a href=""><i class="fa-brands fa-facebook"></i></a>
+                    <a href=""><i class="fa-brands fa-facebook"></i></a>
+                    <a href=""><i class="fa-brands fa-facebook"></i></a>
+                    <a href=""><i class="fa-brands fa-facebook"></i></a>
+                </div> -->
+                <a href="img/resume.pdf" download class="btn btn2">Download CV</a>
+            </div>
+             <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Mail" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div> 
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Have a nice day!</p>
+    </div>
+</div>
+    
+    <script>
+
+            var tablinks = document.getElementsByClassName("tab-links");
+            var tabcontents = document.getElementsByClassName("tab-contents");
+            function opentab(tabname)
+            {
+                for(tablink of tablinks){
+                    tablink.classList.remove("active-link");
+                }
+                for(tabcontent of tabcontents){
+                    tabcontent.classList.remove("active-tab");
+                }
+                event.currentTarget.classList.add("active-link");
+                document.getElementById(tabname).classList.add("active-tab");
+            }
+     </script>
+     <!-- <script>
+        var sidemeu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemeu.style.right = "0";
+        }
+        function closemenu(){
+            sidemeu.style.right = "-200px";
+        }
+
+     </script> -->
+     <script>
+        var typed = new Typed(".auto-type",{
+            strings: ["Front-End Developer", "Aspiring Data Analyst"],
+            typeSpeed: 100,
+            backSpeed: 100,
+            loop: true,
+        })
+     </script>
+      <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwpqZ5BLKWKTZQ0N9AtQAzjbSZ9ISOBPmlItSPTCxlIwDlxPI8EaHR_M7fWnF3MsOEU/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                    msg.innerHTML = "Message sent successfully!"
+                    setTimeout(function(){
+                        msg.innerHTML = ""
+                    },5000)
+                    form.reset()
+                })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+</body>
+</html>
