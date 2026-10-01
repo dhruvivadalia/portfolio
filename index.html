@@ -1,263 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <link rel="icon" type="image/png" href="d.png">
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>Dhruvi Vadalia — Full Stack Developer</title>
+
+  <meta name="description"
+    content="Portfolio of Dhruvi Vadalia, Full Stack Developer specializing in Angular, .NET Core, Argon2id security, and clean architecture." />
+  <meta name="theme-color" content="#090a0f" />
+  <link rel="icon" type="image/png" href="d.png" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap"
+    rel="stylesheet" />
+
+  <!-- Minimal Style -->
+  <link rel="stylesheet" href="css/main.css" />
 </head>
+
 <body>
-    <div id="header">
-        <div class="container"> 
-            <nav>
-               <!---<img src="img/l1.png" class="logo"> -->
-                <ul>
-                    <li> <a href="#header"> Home </a></li>
-                    <li> <a href="#about"> About </a></li>
-                    <li> <a href="#portfolio"> Portfolio </a></li>
-                    <li> <a href="#contact"> Contact </a></li>
-                    <!--bar-->
-                </ul>
-            </nav>
-            <div class="header-text">
-                <h1>Hi, I'm <span>Dhruvi Vadalia</span> from Gujarat</h1>
-                <span class="auto-type"></span> <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-            </div>
-        </div>
-    </div>
-<!-----------------------About-------------------------->
-    <div id="about">
-        <div class="container">
-            <div class="row">
-                <div class="about-col-1">
-                    <img src="img.jpg">
-                </div>
-                <div class="about-col-2">
-                    <h1 class="sub-title">About Me</h1>
-                    
-                    <p class="ab">I’m a passionate Full Stack Developer and aspiring Data Analyst who loves solving real-world problems through code and data. With experience in front-end and back-end technologies, I enjoy building responsive, user-friendly web applications and exploring the power of data to uncover insights and drive smarter decisions. <br>
+  <div id="app">
+    <!-- Top Minimal Navigation -->
+    <header class="top-bar">
+      <div class="brand">
+        <span>Dhruvi Vadalia</span>
+        <span class="brand-role">/ Full Stack Developer</span>
+      </div>
 
-                                💻 On the development side, I work with HTML, CSS, JavaScript, React, Node.js, and MongoDB to create seamless web experiences. <br>
+      <nav class="top-nav" id="top-nav"></nav>
 
-                                📊 On the data side, I’m learning Python, Pandas, SQL, and data visualization tools to turn raw data into actionable stories. <br>
+      <div>
+        <a href="Vadalia_Dhruvi_Resume.pdf" download class="resume-btn" target="_blank" rel="noopener">Resume</a>
+      </div>
+    </header>
 
-                                Curious, detail-oriented, and always eager to learn, I’m trying to bridge the gap between development and data to build better, smarter digital products.</p>
+    <!-- Full-Viewport Stage -->
+    <main class="stage-wrapper">
+      <div class="stage-container" id="stage-container">
+        <!-- Section panes are dynamically populated and loaded here -->
+      </div>
+    </main>
 
-                    <div class="tab-links">
-                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
-                        <p class="tab-links" onclick="opentab('education')">Education</p>
-                    </div>
-                    <div class="tab-contents active-tab" id="skills">
-                        <ul>
-                            <li class="main"><span>Front-End</span><br>HTML, CSS, JavaScript, React.js, UI/UX principles.</li>
-                            <li class="main"><span>Back-End</span><br>Django, Express.js, MongoDB, REST APIs.</li>
-                            <li class="main"><span>Data Analyst Skills</span><br>SQL, Python, Excel, Power BI, Statistics.</li>
-                        </ul>
-                    </div>
-                    <div class="tab-contents" id="experience">
-                        <ul>
-                            <li class="main"><span>Web Developer</span><br>Web Development</li>
-                            <li class="main"><span>UI/UX Desiger</span><br>Designing Web/App Interfaces</li>
-                            <li class="main"><span>Certificate Course</span>
-                                <a  class="main"><p>Data Analyst Course by IBM (ongoing)</p></a></li>
-                                <a  class="main"><p>Python Course by Udemy (ongoing)</p></a></li>
-                        </ul>
-                    </div>
-                    <div class="tab-contents" id="education">
-                        <ul>
-                            <li class="main"><span>2025: Sal Institute of <br> Technology and Engineering Research</span><br>B.E. in ICT</li>
-                            <li class="main"><span>2020: Maharaja Agrasen Vidhyalaya</span><br>Higher Secondary Education - CBSE</li>
-                            <li class="main"><span>2018: Nirman High School</span><br>Secondary Education - CBSE</li>
-                        </ul>
-                    </div>
-                    
-                </div>
-            </div>
-        </div>
-    </div>
-<!-----------------------Porfolio-------------------------->
-<div id="portfolio">
-    <div class="container">
-        <h1 class="sub-title">My Work</h1>
+    <!-- Side Navigation Indicator Dots -->
+    <nav class="side-nav" id="side-nav" aria-label="Section navigation"></nav>
 
-        <div class="work-list">
-            
-            <div class="work">
-                <img src="clock.png">
-                <div class="layer">
-                    <h3>Analog Clock</h3>
-                    <p>A functioning Analog Clock using HTML, CSS, and JavaScript</p>
-                    <!---
-                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
-                    -->
-                    <a href="https://dhruvivadalia.github.io/project_clock/"><img src="icon.png"></a>
-                </div>
-            </div>
-            <div class="work">
-            <img src="cal.png">
-                <div class="layer">
-                    <h3>Calculator</h3>
-                    <p>A functioning Calculator using HTML, CSS, and JavaScript</p>
-                    <!---
-                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
-                    -->
-                    <a href="https://dhruvivadalia.github.io/project_cal/"><img src="icon.png"></a>
-                </div>
-            </div>
-            <div class="work">
-                <img src="dadjoke.jpg">
-                <div class="layer">
-                    <h3>Dad Joke Generator</h3>
-                    <p>A Dad Joke generator using HTML, CSS, and JavaScript</p>
-                    <!---
-                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
-                    -->
-                    <a href="https://dhruvivadalia.github.io/dad_joke/"><img src="icon.png"></a>
-                </div>
-            </div>
-            <div class="work">
-                <img src="pt.jpg">
-                    <div class="layer">
-                        <h3>Pomodoro Timer</h3>
-                        <p>A functioning Pomodoro Timer using HTML, CSS, and JavaScript</p>
-                        <!---
-                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
-                        -->
-                        <a href="https://dhruvivadalia.github.io/pomodoro_timer/"><img src="icon.png"></a>
-                    </div>
-            </div>
-            <div class="work">
-                <img src="mba.png">
-                    <div class="layer">
-                        <h3>Market Basket Analysis</h3>
-                        <p>Association Rule Mining using Apriori Algorithm and Flask</p>
-                        <a href="https://github.com/dhruvivadalia/market-basket-analysis"><img src="icon.png"></a>
-                    </div>
-            </div>
-      <!--      <div class="work">
-                <img src="img/cal.png">
-                    <div class="layer">
-                        <h3>Calculator</h3>
-                        <p>A functioning Calculator using HTML, CSS and JavaScript</p>
-                        <a href="http://127.0.0.1:5500/project_cal/indexcal.html"><img src="img/icon.png"></a>
-                    </div>
-            </div>
-            <div class="work">
-                <img src="img/cal.png">
-                    <div class="layer">
-                        <h3>Calculator</h3>
-                        <p>A functioning Calculator using HTML, CSS and JavaScript</p>
-                        <a href="http://127.0.0.1:5500/project_cal/indexcal.html"><img src="img/icon.png"></a>
-                    </div>
-                </div>
-                <div class="work">
-                    <img src="img/clock.png">
-                    <div class="layer">
-                        <h3>Analog Clock</h3>
-                        <p>A functioning Analog Clock using HTML, CSS and JavaScript</p>
-                        <a href="http://127.0.0.1:5500/project_clock/indexclock.html"><img src="img/icon.png"></a>
-                    </div>
-                </div>
-            -->
-        </div>
-        <a href="#" class="btn">See more</a>
-    </div>
-</div>
-<!----------------------------Contact--------------------------------------------------------------------->
-<div id="contact">
-    <div class="container">
-        <div class="row">
-                <div class="contact-left">
-                <h1 class="sub-title">Contact Me</h1>
-                <!--icon--> <a href="mailto:dvadalia10@gmail.com" class="mail">
-                            <p>Gmail</p>
-                            </a>
-                            <a href="https://www.linkedin.com/in/dhruvivadalia1509/" class="mail">
-                            <p>LinkedIn</p>
-                            </a>
-                            <a href="https://github.com/dhruvivadalia" class="mail">
-                            <p>GitHub</p>
-                            </a>
-                
-<!--                 <div class="social-icons">
-                         <a href=""><i class="fa-brands fa-facebook"></i></a>
-<!--                     <a href=""><i class="fa-brands fa-facebook"></i></a> -->
-<!--                     <a href=""><i class="fa-brands fa-facebook"></i></a> -->
-<!--                     <a href=""><i class="fa-brands fa-facebook"></i></a> -->
-<!--                 </div> -->
-                    
-                <a href="Dhruvi_Vadalia_Resume.pdf" download class="btn btn2">Download CV</a>
-            </div>
-             <div class="contact-right">
-                <form name="submit-to-google-sheet">
-                    <input type="text" name="Name" placeholder="Your Name" required>
-                    <input type="email" name="Email" placeholder="Your Mail" required>
-                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
-                    <button type="submit" class="btn btn2">Submit</button>
-                </form>
-                <span id="msg"></span>
-            </div> 
-        </div>
-    </div>
-    <div class="copyright">
-        <p>Have a nice day!</p>
-    </div>
-</div>
-    
-    <script>
+    <!-- Bottom Status Bar -->
+    <footer class="bottom-bar">
+      <div class="progress-indicator" id="progress-indicator">01 / 07</div>
 
-            var tablinks = document.getElementsByClassName("tab-links");
-            var tabcontents = document.getElementsByClassName("tab-contents");
-            function opentab(tabname)
-            {
-                for(tablink of tablinks){
-                    tablink.classList.remove("active-link");
-                }
-                for(tabcontent of tabcontents){
-                    tabcontent.classList.remove("active-tab");
-                }
-                event.currentTarget.classList.add("active-link");
-                document.getElementById(tabname).classList.add("active-tab");
-            }
-     </script>
-     <!-- <script>
-        var sidemeu = document.getElementById("sidemenu");
+      <div class="scroll-hint">
+        <span>Scroll or press ↓ ↑ to navigate</span>
+      </div>
 
-        function openmenu(){
-            sidemeu.style.right = "0";
-        }
-        function closemenu(){
-            sidemeu.style.right = "-200px";
-        }
+      <div class="nav-arrows">
+        <button class="arrow-btn" id="btn-prev" aria-label="Previous section">↑</button>
+        <button class="arrow-btn" id="btn-next" aria-label="Next section">↓</button>
+      </div>
+    </footer>
+  </div>
 
-     </script> -->
-     <script>
-        var typed = new Typed(".auto-type",{
-            strings: ["Front-End Developer","Full-Stack Developer", "Aspiring Data Analyst"],
-            typeSpeed: 100,
-            backSpeed: 100,
-            loop: true,
-        })
-     </script>
-      <script>
-        const scriptURL = 'https://script.google.com/macros/s/AKfycbwpqZ5BLKWKTZQ0N9AtQAzjbSZ9ISOBPmlItSPTCxlIwDlxPI8EaHR_M7fWnF3MsOEU/exec'
-        const form = document.forms['submit-to-google-sheet']
-        const msg = document.getElementById("msg")
-
-        form.addEventListener('submit', e => {
-          e.preventDefault()
-          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-            .then(response => {
-                    msg.innerHTML = "Message sent successfully!"
-                    setTimeout(function(){
-                        msg.innerHTML = ""
-                    },5000)
-                    form.reset()
-                })
-            .catch(error => console.error('Error!', error.message))
-        })
-      </script>
+  <!-- Application Engine -->
+  <script type="module" src="js/app.js"></script>
 </body>
+
 </html>
