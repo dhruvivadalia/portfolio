@@ -632,6 +632,37 @@ button {
 }
 
 /* Projects */
+.proj-filter-bar {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 18px;
+  flex-wrap: wrap;
+}
+
+.proj-filter-btn {
+  font-family: var(--font-mono);
+  font-size: 0.76rem;
+  padding: 5px 12px;
+  border-radius: 20px;
+  border: 1px solid var(--border);
+  color: var(--text-muted);
+  background: rgba(255, 255, 255, 0.02);
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.proj-filter-btn:hover {
+  color: var(--text);
+  border-color: var(--border-active);
+}
+
+.proj-filter-btn.active {
+  color: #090a0f;
+  background: var(--text);
+  border-color: var(--text);
+  font-weight: 600;
+}
+
 .projects-deck {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -647,17 +678,33 @@ button {
   flex-direction: column;
   justify-content: space-between;
   gap: 10px;
-  transition: border-color 0.2s ease;
+  transition: all 0.25s ease;
 }
 
 .project-box:hover {
   border-color: var(--border-active);
+  transform: translateY(-2px);
+}
+
+.project-box-live {
+  border-color: rgba(56, 189, 248, 0.2);
+}
+
+.project-box-live:hover {
+  border-color: rgba(56, 189, 248, 0.45);
 }
 
 .proj-head {
   display: flex;
   justify-content: space-between;
-  align-items: baseline;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.proj-title-wrap {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
   gap: 8px;
 }
 
@@ -665,6 +712,55 @@ button {
   font-size: 0.98rem;
   font-weight: 600;
   color: var(--text);
+}
+
+.live-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  color: #34d399;
+  background: rgba(52, 211, 153, 0.1);
+  padding: 2px 7px;
+  border-radius: 10px;
+  border: 1px solid rgba(52, 211, 153, 0.25);
+  letter-spacing: 0.02em;
+}
+
+.pulse-dot {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: #34d399;
+  box-shadow: 0 0 6px #34d399;
+  animation: pulse-glow 2s infinite ease-in-out;
+}
+
+@keyframes pulse-glow {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.35; transform: scale(0.8); }
+}
+
+.proj-link {
+  font-size: 0.8rem;
+  color: var(--text-dim);
+  transition: color 0.2s ease;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.proj-link:hover {
+  color: var(--accent);
+}
+
+.proj-link-live {
+  color: var(--accent);
+  font-weight: 500;
+}
+
+.proj-link-live:hover {
+  text-decoration: underline;
 }
 
 .proj-desc {
