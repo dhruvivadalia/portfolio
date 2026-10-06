@@ -71,6 +71,15 @@ export function renderProjectsSection(container) {
       desc: 'Production website for career consulting, mentorship, and professional advisory services, designed for intuitive client navigation and service discovery.',
       link: 'https://althobrainservices.com/',
       isLive: true
+    },
+    {
+      title: 'Duster Handle',
+      category: 'website',
+      categoryLabel: 'Live Website',
+      stack: 'Angular · Web Development · Responsive UI · Product Showcase',
+      desc: 'Official live product catalogue and brand platform for architectural hardware and handle fittings, built with responsive modern UI and interactive product showcase.',
+      link: 'https://dusterhandle.com/home',
+      isLive: true
     }
   ];
 
@@ -81,14 +90,17 @@ export function renderProjectsSection(container) {
       ? allProjects
       : allProjects.filter(p => p.category === currentFilter);
 
+    const softwareCount = allProjects.filter(p => p.category === 'software').length;
+    const websiteCount = allProjects.filter(p => p.category === 'website').length;
+
     container.innerHTML = `
       <div class="pane-inner">
         <div class="sec-meta">05 / Projects &amp; Works</div>
         <h2 class="sec-title">Selected Work</h2>
 
         <div class="proj-filter-bar">
-          <button class="proj-filter-btn ${currentFilter === 'software' ? 'active' : ''}" data-filter="software">Software &amp; Architecture (5)</button>
-          <button class="proj-filter-btn ${currentFilter === 'website' ? 'active' : ''}" data-filter="website">Live Websites (3)</button>
+          <button class="proj-filter-btn ${currentFilter === 'software' ? 'active' : ''}" data-filter="software">Software &amp; Architecture (${softwareCount})</button>
+          <button class="proj-filter-btn ${currentFilter === 'website' ? 'active' : ''}" data-filter="website">Live Websites (${websiteCount})</button>
           <button class="proj-filter-btn ${currentFilter === 'all' ? 'active' : ''}" data-filter="all">All (${allProjects.length})</button>
         </div>
 
